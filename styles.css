@@ -1,0 +1,479 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #181818;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #ff4081;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+}
+
+.left {
+    font-size: 1.8rem;
+    color: rgb(155, 90, 216);
+    justify-content: space-around;
+    text-align: center;
+}
+
+#home {
+    background: linear-gradient(135deg, #ff4081, #2c2c2c);
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+.logo {
+    max-width: 150px; /* Adjust size of logo */
+    margin-bottom: 20px;
+    margin-top: 80px;
+    border-radius: 50%; /* Optional: Makes the logo circular if it’s a square image */
+    box-shadow: 
+        0 10px 20px rgba(255, 64, 129, 0.5), /* Pink shadow */
+        0 10px 30px rgba(64, 224, 208, 0.3), /* Cyan shadow */
+        0 10px 40px rgba(255, 255, 0, 0.2);  /* Yellow shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.logo:hover {
+    box-shadow: 
+        0 15px 30px rgba(255, 64, 129, 0.7), /* Pink shadow */
+        0 15px 40px rgba(64, 224, 208, 0.5), /* Cyan shadow */
+        0 15px 50px rgba(255, 255, 0, 0.4);  /* Yellow shadow */
+    transform: translateY(-5px); /* Slight lift on hover */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#home h1 {
+    font-size: 4rem;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+#home p {
+    font-size: 1.7rem;
+    margin-top: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #ff4081;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #ff4081;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+ h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+    color: #ff4081;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align:center;
+    animation: fadeInUp 1s ease-in-out;
+    font-size: 1.3rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    flex-basis: calc(33.333% - 20px);
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px #ff4081(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project {
+    width: 30%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 
+       /* 0 10px 20px rgba(255, 64, 129, 0.5), /* Pink shadow */
+        0 10px 30px #a840e04d, /* Cyan shadow */
+        0 10px 40px #004cff33;  /* Yellow shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    box-shadow: 
+       /* 0 15px 30px rgba(255, 64, 129, 0.7), /* Pink shadow */
+        0 15px 40px rgba(221, 64, 224, 0.5), /* Cyan shadow */
+        0 15px 50px #5d00ff66;  /* Yellow shadow */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Keep the image rounded as well */
+    transition: transform 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+#about {
+
+    border-radius: 15px; /* Softened corners */
+    background-color: #1e1e1e; /* Dark background */
+    box-shadow: 
+        /*0 10px 20px rgba(255, 64, 129, 0.5), /* Pink shadow */
+        0 10px 30px #407be04d, /* Cyan shadow */
+        0 10px 40px hsla(276, 100%, 50%, 0.2);  /* Yellow shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+
+#about:hover {
+    box-shadow: 
+       /* 0 15px 30px rgba(255, 64, 129, 0.7), /* Pink shadow */
+        0 15px 40px #4083e080, /* Cyan shadow */
+        0 15px 50px #9000ff66;  /* Yellow shadow */
+    transform: translateY(-5px); /* Slight lift on hover */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.05);
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px #4070ff(0, 0, 0, 0.5);
+}
+
+.project h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.7rem;
+}
+
+.project p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px; /* Added padding to give space around the shadow */
+    border-radius: 10px; /* Softens the corners */
+    box-shadow: 0 10px 20px #4076ff(0, 0, 0, 0.3); /* Shadow effect for the entire project section */
+    background-color: #1e1e1e; /* Optional: Adds a background color for better contrast */
+}
+
+.projects:hover {
+    box-shadow: 0 15px 30px #40e9ff(0, 0, 0, 0.4); /* Increase shadow on hover */
+    transform: translateY(-5px); /* Slight upward movement */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+#Services {
+    padding: 60px 20px;
+    border-radius: 15px; /* Softens the edges */
+    background-color: #1e1e1e; /* Dark background */
+    box-shadow: 
+        /*0 10px 20px rgba(255, 64, 129, 0.5), /* Pink shadow */
+        0 10px 30px #4078e04d, /* Cyan shadow */
+        0 10px 40px #8400ff33;  /* Yellow shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+#Services:hover {
+    box-shadow: 
+       /* 0 15px 30px rgba(255, 64, 129, 0.7), /* Pink shadow */
+        0 15px 40px #406be080, /* Cyan shadow */
+        0 15px 50px #8800ff66;  /* Yellow shadow */
+    transform: translateY(-5px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+
+* {
+    box-sizing: border-box; /* Ensure every element uses the border-box model */
+}
+
+#cursor: pointer;
+    font-size: 1.2rem; /* Adjust font size of button */
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; /* Apply border-box for the button */
+
+#contact {
+    padding: 30px 20px; /* Reduce padding for the entire section */
+    text-align: center;
+    box-sizing: border-box; /* Apply border-box for the section */
+    box-shadow: 
+      /* 0 10px 20px rgba(255, 64, 129, 0.5), /* Pink shadow */
+        0 10px 30px #4083e04d, /* Cyan shadow */
+        0 10px 40px #8800ff33;  /* Yellow shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+#contact:hover {
+    box-shadow: 
+        /*0 15px 30px rgba(255, 64, 129, 0.7), /* Pink shadow */
+        0 15px 40px #4075e080, /* Cyan shadow */
+        0 15px 50px #9000ff66;  /* Yellow shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+#contact h2 {
+    font-size: 2.2rem; /* Adjust heading size to be smaller */
+    margin-bottom: 15px; /* Reduce margin below the heading */
+    box-sizing: border-box; /* Apply border-box for heading */
+}
+
+#contact form {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Add internal padding for compactness */
+    box-sizing: border-box; /* Apply border-box for the form */
+}
+
+#contact label {
+    margin-bottom: 8px; /* Reduce space between label and input */
+    font-weight: bold;
+    box-sizing: border-box; /* Apply border-box for labels */
+}
+
+#contact input, #contact textarea {
+    margin-bottom: 15px; /* Reduce margin below input fields */
+    padding: 10px; /* Adjust padding to make inputs smaller */
+    border: 2px solid #ff4081;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.1rem;
+    color: #333;
+    background-color: #282828;
+    box-sizing: border-box; /* Ensure input and textarea follow the border-box model */
+}
+
+#contact button {
+    padding: 10px; /* Reduce button size */
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem; /* Adjust font size of button */
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; /* Apply border-box for the button */
+}
+
+#contact button:hover {
+    background-color: #fff;
+    color: #ff4081;
+}
+
+
+#contact {
+    padding: 60px 20px;
+    border-radius: 15px; /* Softened corners */
+    background-color: #1e1e1e; /* Dark background */
+    box-shadow: 
+        /*0 10px 20px rgba(255, 64, 129, 0.5), /* Pink shadow */
+        0 10px 30px #407be04d, /* Cyan shadow */
+        0 10px 40px #9000ff33;  /* Yellow shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+#contact:hover {
+    box-shadow: 
+      /*  0 15px 30px rgba(255, 64, 129, 0.7), /* Pink shadow */
+        0 15px 40px #4075e080, /* Cyan shadow */
+        0 15px 50px hsla(274, 100%, 50%, 0.4);  /* Yellow shadow */
+    transform: translateY(-5px); /* Slight lift on hover */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex-basis: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+}
+#projects {
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 
+        0 10px 20px rgba(255, 64, 129, 0.5), /* Pink shadow */
+        0 10px 30px rgba(64, 224, 208, 0.3), /* Cyan shadow */
+        0 10px 40px rgba(255, 255, 0, 0.2);  /* Yellow shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+#projects:hover {
+    box-shadow: 
+        0 15px 30px rgba(255, 64, 129, 0.7), /* Pink shadow */
+        0 15px 40px rgba(64, 224, 208, 0.5), /* Cyan shadow */
+        0 15px 50px rgba(255, 255, 0, 0.4);  /* Yellow shadow */
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 30%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 
+        0 10px 20px rgba(255, 64, 129, 0.5), /* Pink shadow */
+        0 10px 30px rgba(64, 224, 208, 0.3), /* Cyan shadow */
+        0 10px 40px rgba(255, 255, 0, 0.2);  /* Yellow shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 
+        0 12px 24px rgba(255, 64, 129, 0.7), /* Pink shadow */
+        0 12px 30px rgba(64, 224, 208, 0.5), /* Cyan shadow */
+        0 12px 40px rgba(255, 255, 0, 0.4);  /* Yellow shadow */
+}
+
+.project h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.7rem;
+}
+
+.project p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .project {
+        width: 100%; /* Full width for each project */
+        margin-bottom: 20px; /* Less margin between stacked projects */
+    }
+}
